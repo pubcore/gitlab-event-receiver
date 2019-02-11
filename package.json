@@ -1,0 +1,43 @@
+{
+  "scripts": {
+    "test": "nyc --reporter=text mocha --inspect --require babel-register --require source-map-support --recursive",
+    "build": "babel src --out-dir js",
+    "prepare": "npm run build",
+    "watch": "babel --watch src --out-dir js",
+    "coverage": "nyc report --reporter=text-lcov"
+  },
+  "main": "js/index.js",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "name": "@pubcore/gitlab-event-receiver",
+  "version": "1.0.0",
+  "description": "pubcore component to support gitlab webhooks",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pubcore/gitlab-event-receiver.git"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "pubcore",
+  "devDependencies": {
+    "@pubcore/node-composition": "^2.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^5.13.0",
+    "eslint-plugin-mocha": "^5.2.1",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "nyc": "^13.2.0"
+  }
+}
