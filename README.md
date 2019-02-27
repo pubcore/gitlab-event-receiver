@@ -10,8 +10,8 @@ This package can be used in context of @pubcore/node-composition.
 	import {login, resources, gilabEvent} from '@pubcore/gitlab-event-receiver'
 
 	//process gitlab event data
-	const process = data =>  
-		new Promise((res, rej) => {... do something with data ...})
+	const process = ({gitlabEvent, package_scope, package_name}) =>  
+		new Promise((res, rej) => {... do something with given data ...})
 
 	export default {
 		login,
