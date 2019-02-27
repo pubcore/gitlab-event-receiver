@@ -6,9 +6,7 @@ import gitlabEvent from '../src/gitlabEvent'
 chai.use(chaiHttp)
 
 var lastPayload
-const processEvent = payload => {
-	lastPayload = payload
-}
+const processEvent = payload => Promise.resolve(lastPayload = payload)
 
 const app = express(),
 	error = err => {throw err}

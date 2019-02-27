@@ -9,7 +9,7 @@ export default {
 	http: [
 		{
 			routePath: '/',
-			map: gitlabEvent(() => {}),
+			map: gitlabEvent(() => Promise.resolve()),
 			method: 'POST',
 			accepted: ['application/json']
 		}
