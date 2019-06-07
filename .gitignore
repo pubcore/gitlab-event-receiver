@@ -3,6 +3,5 @@ yarn-debug.log*
 yarn-error.log*
 node_modules/
 .npm
-js
 mydb.sqlite
 .nyc_output

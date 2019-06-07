@@ -1,11 +1,13 @@
-import chai, {expect} from 'chai'
-import chaiHttp from 'chai-http'
-import composition from '@pubcore/node-composition'
-import express from 'express'
-import {login, gitlabEvent, resources} from '../src/index'
+'use strict'
+const chai = require('chai'),
+	{expect} = chai,
+	chaiHttp = require('chai-http'),
+	composition = require('@pubcore/node-composition').default,
+	express = require('express'),
+	{login, gitlabEvent, resources} = require('../js/index')
 
 const compositionConf = {
-		components:{'../src/index':{context_path:'/gitlab-event'}},
+		components:{'../js/index':{context_path:'/gitlab-event'}},
 		componentDefault:{
 			webhook_secret_path:`${__dirname}/secrets/webhook_secret`
 		}

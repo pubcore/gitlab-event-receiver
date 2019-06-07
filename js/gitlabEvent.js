@@ -1,4 +1,6 @@
-export default  process => (req, res) => {
+'use strict'
+
+exports.default = process => (req, res) => {
 	//https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#events
 	var {body} = req,
 		{project} = body,

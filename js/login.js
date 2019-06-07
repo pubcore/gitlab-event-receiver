@@ -1,4 +1,5 @@
-export default (req, res, next) => {
+'use strict'
+exports.default = (req, res, next) => {
 	var token = req.get('X-Gitlab-Token'),
 		{resources} = req,
 		{webhook_secret} = resources

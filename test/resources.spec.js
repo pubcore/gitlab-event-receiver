@@ -1,5 +1,6 @@
-import resources from '../src/resources'
-import {deepStrictEqual, rejects} from 'assert'
+'use strict'
+const resources = require( '../js/resources').default,
+	{deepStrictEqual, rejects} = require('assert')
 
 var req = {component:{
 	webhook_secret_path:`${__dirname}/secrets/webhook_secret`}

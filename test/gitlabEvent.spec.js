@@ -1,7 +1,9 @@
-import chai, {expect} from 'chai'
-import chaiHttp from 'chai-http'
-import express from 'express'
-import gitlabEvent from '../src/gitlabEvent'
+'use strict'
+const chai = require('chai'),
+	{expect} = chai,
+	chaiHttp = require('chai-http'),
+	express = require('express'),
+	gitlabEvent = require('../js/gitlabEvent').default
 
 chai.use(chaiHttp)
 

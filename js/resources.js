@@ -1,8 +1,9 @@
-import {promisify} from 'util'
-import fs from 'fs'
-const readFile = promisify(fs.readFile)
+'use strict'
+const {promisify} = require('util'),
+	fs = require('fs'),
+	readFile = promisify(fs.readFile)
 
-export default req => {
+exports.default = req => {
 	var webhook_secret,
 		{component} = req,
 		{webhook_secret_path} = component

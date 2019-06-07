@@ -1,6 +1,8 @@
-import chai, {expect} from 'chai'
-import chaiHttp from 'chai-http'
-import express from 'express'
+'use strict'
+const chai = require('chai'),
+	{expect} = chai,
+	chaiHttp = require('chai-http'),
+	express = require('express')
 
 chai.use(chaiHttp)
 
