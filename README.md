@@ -25,7 +25,8 @@ This package can be used in context of @pubcore/node-composition.
 				accepted: ['application/json']
 			}
 		],
-		webhook_secret_path:'/path/to/authentication/token'
+		webhook_secret_path:'/path/to/authentication/token',
+		config_module:'/path/to/compositions/domains/example.com/config.js'
 	}
 
 
