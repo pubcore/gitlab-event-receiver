@@ -17,7 +17,7 @@
   },
   "author": "pubcore",
   "devDependencies": {
-    "@pubcore/node-composition": "^2.5.0",
+    "@pubcore/node-composition": "^2.6.1",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "eslint": "^5.16.0",
