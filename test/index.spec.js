@@ -13,7 +13,7 @@ const compositionConf = {
 		}
 	},
 	app = express()
-app.use(composition(compositionConf, pkg => require(pkg)))
+app.use(composition(compositionConf, require))
 
 chai.use(chaiHttp)
 const error = err => {throw err}
